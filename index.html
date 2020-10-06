@@ -13,7 +13,7 @@
   <body class="page-body">
 <header class="main-header">
   <section class="service-navigation">
-    <h2 style="display: none;">Меню сайта</h2>
+    <h2 class="visually-hidden">Меню сайта</h2>
     <a class="main-header-logo" href="#">
       <img src="https://via.placeholder.com/220x47" width="220" height="47" alt="Логотип Техномарта">
     </a>
@@ -25,22 +25,22 @@
     </ul>
   </section>
   <section class="main-header-middle">
-    <h2 style="display: none;">О сайте</h2>
+    <h2 class="visually-hidden">О сайте</h2>
     <p>
       Интернет магазин строительных материалов и инструментов для ремонта
     </p>
 
-    <h2 style="display: none;">Контактная информация</h2>
+    <h2 class="visually-hidden">Контактная информация</h2>
     <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
     <p class="header-adress">
       г.Санкт-Петербург,ул.Б.Конюшенная,д. 19/8
     </p>
 
-    <h2 style="display: none;">Вход</h2>
+    <h2 class="visually-hidden">Вход</h2>
     <!--Форма входа-->
     <a class="login-link" href="blank.html">Войти</a>
 
-    <h2 style="display: none;">Регистрация</h2>
+    <h2 class="visually-hidden">Регистрация</h2>
     <!--Форма регистрации-->
     <a class="registration-link" href="blank.html">Регистрация</a>
 
@@ -60,10 +60,10 @@
 
 <main class="container">
 
-<h1 style="display: none;">Интернет-магазин Техномарт</h1>
+<h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
 
 <section class="main-services">
-  <h2 style="display: none;">Промо-блок</h2>
+  <h2 class="visually-hidden">Промо-блок</h2>
   <ul class="services-list">
     <li class="services-item matirials">
       <h3>Материалы</h3>
@@ -104,7 +104,7 @@
     <figure>
       <a class="buy-button" href="blank.html">Купить</a>
       <a class="basket-button" href="blank.html">В закладки</a>
-        <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Фото перфоратора BOSCH BFG 9000">
+        <img class="item-img" src="https://via.placeholder.com/184x164" width="184" height="164" alt="Фото перфоратора BOSCH BFG 9000">
       </figure>
     <h3>Перфоратор BOSCH BFG 9000</h3>
     <p class="old-price">32500 Р.</p>
@@ -116,7 +116,7 @@
     <figure>
       <a class="buy-button" href="blank.html">Купить</a>
       <a class="basket-button" href="blank.html">В закладки</a>
-        <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Фото перфоратора BOSCH BFG 3000">
+        <img class="item-img" src="https://via.placeholder.com/184x164" width="184" height="164" alt="Фото перфоратора BOSCH BFG 3000">
     </figure>
     <h3>Перфоратор BOSCH BFG 3000</h3>
     <p class="old-price">22500 Р.</p>
@@ -128,7 +128,7 @@
     <figure>
       <a class="buy-button" href="blank.html">Купить</a>
       <a class="basket-button" href="blank.html">В закладки</a>
-        <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Фото перфоратора BOSCH BFG 6000">
+        <img class="item-img" src="https://via.placeholder.com/184x164" width="184" height="164" alt="Фото перфоратора BOSCH BFG 6000">
     </figure>
     <h3>Перфоратор BOSCH BFG 6000</h3>
     <p class="old-price">30500 Р.</p>
@@ -140,7 +140,7 @@
     <figure>
       <a class="buy-button" href="blank.html">Купить</a>
       <a class="basket-button" href="blank.html">В закладки</a>
-        <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Фото перфоратора BOSCH BFG 2000">
+        <img class="item-img" src="https://via.placeholder.com/184x164" width="184" height="164" alt="Фото перфоратора BOSCH BFG 2000">
     </figure>
     <h3>Перфоратор BOSCH BFG 2000</h3>
     <div class="new-price">
@@ -288,23 +288,25 @@
       <img src="https://via.placeholder.com/220x68" width="220" height="68"alt="Логотип Техномарта">
     </a>
 
-    <h2 style="display: none;">Контактная информация</h2>
+    <h2 class="visually-hidden">Контактная информация</h2>
     <p class="footer-adress">
     г.Санкт-Петербург,ул.Б.Конюшенная,д. 19/8
     </p>
     <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
 
   <nav class="footer-navigation">
-    <ul>
+    <ul class="top-line">
       <li><a href="blank.html">Компания</a></li>
       <li><a href="blank.html">Новости</a></li>
       <li><a href="catalog.html">Каталог</a></li>
       <li><a href="blank.html">Доставка</a></li>
       <li><a href="blank.html">Контакты</a></li>
-      <li><a class="bottom-button" href="blank.html">Материалы</a></li>
-      <li><a class="bottom-button" href="blank.html">Техника</a></li>
-      <li><a class="bottom-button" href="blank.html">Инструмент</a></li>
-      <li><a class="bottom-button" href="blank.html">Спецпредложения</a></li>
+    </ul>
+    <ul class="bottom-line">
+      <li><a href="blank.html">Материалы</a></li>
+      <li><a href="blank.html">Техника</a></li>
+      <li><a href="blank.html">Инструмент</a></li>
+      <li><a href="blank.html">Спецпредложения</a></li>
     </ul>
   </nav>
 

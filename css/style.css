@@ -28,9 +28,9 @@
 
   /* main services colors */
   --special-deepyellow: #FFC047;
-  --clear-white: rgba(0, 0, 0, 0.3);
-  --clear-lightgrey: rgba(77, 77, 77, 0.3);
-  --clear-grey: rgba(66, 66, 66, 0.3);
+  --clear-white: rgba(255, 255, 255, 0.3);
+  --clear-greylight: rgba(197, 197, 197, 0.3);
+  --clear-grey: rgba(169, 169, 169, 0.3);
 
   /* items colors */
   --special-lightgrey: #EAEAEA;
@@ -45,6 +45,11 @@
   --special-gold: #FFD180;
   --special-lightgold: #FFDA96;
   --modal-grey: #f4f4f4;
+  --modal-lightgrey: #f1f1f1;
+
+  /* catalog */
+  --catalog-grey: #F2F6F8;
+  --catalog-lightgrey: #E5E5E5;
 }
 
 .page-body {
@@ -65,6 +70,10 @@ img {
 
 .page a {
   text-decoration: none;
+}
+
+.visually-hidden {
+  visibility: hidden;
 }
 
 /* Main header*/
@@ -201,7 +210,7 @@ opacity: 0.5;
 .services-list a:hover,
 .services-list a:focus {
   border: 1px solid var(--basic-black);
-  background-color: var(--clear-lightgrey);
+  background-color: var(--clear-greylight);
 }
 
 .services-list a:active {
@@ -239,6 +248,7 @@ opacity: 0.5;
   line-height: 18px;
   color: var(--basic-white);
   text-decoration: none;
+  text-transform: uppercase;
   background-color: var(--basic-red);
 }
 
@@ -265,7 +275,8 @@ opacity: 0.5;
 
 /* Popular items */
 
-.popular-item h3 {
+.popular-item h3,
+.item h3 {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -344,7 +355,7 @@ opacity: 0.5;
   font-family: "PT Sans", Arial, sans-serif;
 }
 
-.additional-services h2 {
+.additional-services h2,h3 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -376,10 +387,8 @@ opacity: 0.5;
   list-style: none;
 }
 
-.services-discription-list h3{
-font-size: 30px;
-color: var(--special-darkblue);
-text-transform: uppercase;
+.services-discription-list h3 {
+  color: var(--special-darkblue);
 }
 
 /* About company, delivery companies, contacts */
@@ -388,10 +397,10 @@ text-transform: uppercase;
   color: var(--basic-black);
 }
 
-.about-contacts h2{
-font-size: 30px;
-line-height: 30px;
-text-transform: uppercase;
+.about-contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .about-contacts p {
@@ -420,15 +429,15 @@ text-transform: uppercase;
   color: var(--header-lightgrey)
 }
 
-.footer-navigation a {
-  color: var(--header-lightgrey)
-}
-
 .footer-navigation ul {
   list-style: none;
 }
 
-li .bottom-button {
+.top-line a {
+  color: var(--header-lightgrey)
+}
+
+.bottom-line a {
   color: var(--special-lightgold);
 }
 
@@ -460,13 +469,124 @@ li .bottom-button {
   background-color: var(--social-blue);
 }
 
+.footer-social a:hover,
+.footer-social a:focus,
+.footer-social a:active {
+  background-color: var(--basic-red);
+}
+
 .feedback a,
 .developer a{
   color: var(--special-lightgold);
+  text-decoration: none;
+}
+
+.feedback a:hover,
+.feedback a:focus,
+.developer a:hover,
+.developer a:focus {
+  text-decoration: underline;
+}
+
+.feedback a:active,
+.developer a:active {
+  color: var(--basic-red);
+  text-decoration: none;
 }
 
 /* Modals */
 
 .modal div {
   background-color: var(--modal-grey);
+}
+
+.basket-modal p{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.basket-modal-footer {
+  background-color: var(--modal-lightgrey);
+}
+
+.basket-modal button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: none;
+}
+
+/* CATALOG.HTML */
+
+.catalog-navigation {
+  list-style: none;
+}
+
+.catalog-navigation a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.catalog-navigation li {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.catalog-header {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--special-darkblue);
+  text-transform: uppercase;
+  background-color: var(--catalog-grey);
+}
+
+.pages-buttons,
+.pages-buttons a,
+.pages-buttons button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid var(--catalog-lightgrey);
+  border-radius: 2px;
+  background-color: var(--basic-white);
+}
+
+.active-page-button a{
+color: var(--basic-white);
+background-color: var(--basic-red);
+}
+
+.pages-buttons a:hover:not(.active),
+.pages-buttons a:focus:not(.active),
+.pages-buttons button:hover,
+.pages-buttons button:focus {
+  border-color: var(--basic-greylight);
+}
+
+.pages-buttons a:active:not(.active),
+.pages-buttons button:active {
+  border-color: var(--basic-red);
+}
+
+.item-information,
+.item-information h2 {
+  color: var(--basic-black);
+  background-color: var(--catalog-grey);
+}
+
+.item-information p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
