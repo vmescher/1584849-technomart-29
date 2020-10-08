@@ -205,11 +205,11 @@ opacity: 0.5;
   line-height: 18px;
   color: var(--basic-white);
   background-color: var(--clear-white);
+  text-transform: uppercase;
 }
 
 .services-list a:hover,
 .services-list a:focus {
-  border: 1px solid var(--basic-black);
   background-color: var(--clear-greylight);
 }
 
@@ -276,7 +276,7 @@ opacity: 0.5;
 /* Popular items */
 
 .popular-item h3,
-.item h3 {
+.catalog-item h3 {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -548,8 +548,7 @@ opacity: 0.5;
 }
 
 .pages-buttons,
-.pages-buttons a,
-.pages-buttons button {
+.pages-buttons a {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -562,20 +561,21 @@ opacity: 0.5;
   background-color: var(--basic-white);
 }
 
+.active {
+  pointer-events: none;
+}
+
 .active-page-button a{
 color: var(--basic-white);
 background-color: var(--basic-red);
 }
 
-.pages-buttons a:hover:not(.active),
-.pages-buttons a:focus:not(.active),
-.pages-buttons button:hover,
-.pages-buttons button:focus {
+.pages-buttons a:hover,
+.pages-buttons a:focus {
   border-color: var(--basic-greylight);
 }
 
-.pages-buttons a:active:not(.active),
-.pages-buttons button:active {
+.pages-buttons a:active {
   border-color: var(--basic-red);
 }
 
