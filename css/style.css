@@ -567,13 +567,10 @@ opacity: 0.5;
   background-color: var(--basic-white);
 }
 
-.page-button .active {
+.page-button .active-page-button {
   pointer-events: none;
-}
-
-.active-page-button a{
-color: var(--basic-white);
-background-color: var(--basic-red);
+  color: var(--basic-white);
+  background-color: var(--basic-red);
 }
 
 .pages-buttons a:hover,
