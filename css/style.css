@@ -665,7 +665,8 @@ opacity: 0.5;
   "nav nav"
   "name name"
   "filters sorting"
-  "filters results";
+  "filters results"
+  ". pages";
   column-gap: 20px;
 }
 
@@ -747,6 +748,12 @@ opacity: 0.5;
 
 .pages-buttons {
   margin-top: 48px;
+  grid-area: pages;
+}
+
+.pages-buttons-list {
+  min-height: 38px;
+  margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
