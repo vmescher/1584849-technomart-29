@@ -14,13 +14,17 @@
       <div class="container">
         <div class="service-navigation-wrapper">
           <h2 class="visually-hidden">Меню сайта</h2>
-          <a class="main-header-logo" href="#">
-            <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарта">
-          </a>
-          <input type="search" name="searchfield" id="searchfield" placeholder="Поиск">
+          <div class="main-header-logo">
+            <a class="main-header-logo-link" href="#">
+              <img class="main-header-logo-img" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарта">
+            </a>
+          </div>
+          <div class="searchfield-wrapper">
+            <input class="searchfield" type="search" name="searchfield" id="searchfield" placeholder="Поиск:">
+          </div>
           <ul class="service-navlist">
-            <li><a href="blank.html">Закладки:0</a></li>
-            <li><a href="blank.html">Корзина:0</a></li>
+            <li><a href="blank.html">Закладки: 0</a></li>
+            <li><a href="blank.html">Корзина: 0</a></li>
             <li><a class="success-button" href="blank.html">Оформить заказ</a></li>
           </ul>
         </div>
@@ -31,24 +35,25 @@
       <div class="container">
         <div class="main-header-middle-wrapper">
           <h2 class="visually-hidden">О сайте</h2>
-          <p>
-            Интернет магазин строительных материалов и инструментов для ремонта
-          </p>
+          <p class="header-info">
+            Интернет магазин
+            строительных материалов
+            и инструментов для ремонта</p>
+          <div class="header-contacts">
+            <h2 class="visually-hidden">Контактная информация</h2>
+            <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <p class="header-adress"> г.Санкт-Петербург,ул.Б.Конюшенная,д. 19/8</p>
+          </div>
 
-          <h2 class="visually-hidden">Контактная информация</h2>
-          <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p class="header-adress">
-            г.Санкт-Петербург,ул.Б.Конюшенная,д. 19/8
-          </p>
+          <div class="login-registration-wrapper">
+            <h2 class="visually-hidden">Вход</h2>
+            <!--Форма входа-->
+            <a class="login-link" href="blank.html">Войти</a>
 
-          <h2 class="visually-hidden">Вход</h2>
-          <!--Форма входа-->
-          <a class="login-link" href="blank.html">Войти</a>
-
-          <h2 class="visually-hidden">Регистрация</h2>
-          <!--Форма регистрации-->
-          <a class="registration-link" href="blank.html">Регистрация</a>
-
+            <h2 class="visually-hidden">Регистрация</h2>
+            <!--Форма регистрации-->
+            <a class="registration-link" href="blank.html">Регистрация</a>
+          </div>
           <nav class="main-navigation">
             <ul class="site-navigation">
               <li><a href="#">Главная</a></li>
