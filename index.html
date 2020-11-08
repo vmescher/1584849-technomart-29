@@ -16,11 +16,9 @@
     <div class="container">
       <div class="service-navigation-wrapper">
         <h2 class="visually-hidden">Меню сайта</h2>
-        <div class="main-header-logo">
-          <a class="main-header-logo-link" href="#">
+          <a class="main-header-logo" href="index.html">
             <img class="main-header-logo-img" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарта">
           </a>
-        </div>
         <div class="searchfield-wrapper">
           <input class="searchfield" type="search" name="searchfield" id="searchfield" placeholder="Поиск:">
         </div>
@@ -43,18 +41,15 @@
         <div class="header-contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
           <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p class="header-adress"> г.Санкт-Петербург,ул.Б.Конюшенная,д. 19/8</p>
+          <p class="header-adress"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
 
-        <div class="login-registration-wrapper">
-          <h2 class="visually-hidden">Вход</h2>
           <!--Форма входа-->
           <a class="login-link" href="blank.html">Войти</a>
 
-          <h2 class="visually-hidden">Регистрация</h2>
           <!--Форма регистрации-->
           <a class="registration-link" href="blank.html">Регистрация</a>
-        </div>
+
         <nav class="main-navigation">
           <ul class="site-navigation">
             <li><a href="#">Главная</a></li>
@@ -80,23 +75,23 @@
     <h2 class="visually-hidden">Промо-блок</h2>
     <ul class="services-list">
       <li class="services-item matirials">
-        <h3>Материалы</h3>
+        <h3 class="services-item-name">Материалы</h3>
         <a href="blank.html">На любой вкус</a>
       </li>
       <li class="services-item tools">
-        <h3>Инструмент</h3>
+        <h3 class="services-item-name">Инструмент</h3>
         <a href="blank.html">На все случаи</a>
       </li>
       <li class="services-item vehicle">
-        <h3>Техника</h3>
+        <h3 class="services-item-name">Техника</h3>
         <a href="blank.html">Для стройки</a>
       </li>
       <li class="services-item discount">
-        <h3>Скидки 50%</h3>
+        <h3 class="services-item-name">Скидки 50%</h3>
         <a href="blank.html">На 350 товаров</a>
       </li>
       <li class="services-item delivery">
-        <h3>Доставка</h3>
+        <h3 class="services-item-name">Доставка</h3>
         <a href="blank.html">Бесплатно</a>
       </li>
       <li class="services-item puncher">
@@ -192,7 +187,7 @@
       </li>
       <li class="brand-card">
         <a class="brand-img-link" href="blank.html">
-          <img class="brand-img" src="img/Interskol.png" width="220" height="76" alt="Логотип Интерскол">
+          <img class="brand-img" src="img/Interskol.png" width="200" height="75" alt="Логотип Интерскол">
         </a>
       </li>
       <li class="brand-card">
@@ -221,15 +216,13 @@
 
 <section class="additional-services">
   <div class="container">
+
+      <h2 class="additional-services-header">Сервисы</h2>
+      <p class="additional-services-header-discription">Хороший интернет-магазин отличается от плохого не только ценами!
+        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+      </p>
+
     <div class="additional-services-wrapper">
-
-      <div class="additional-services-header">
-        <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!
-          Мы стараемся изо всех сил,чтобы сделать ваши покупки приятными.
-        </p>
-      </div>
-
       <ul class="add-services-list">
         <li class="add-service-item home-delivery active-service-button">
           <a class="active-service-button" href="#">Доставка</a>
@@ -251,7 +244,7 @@
             поднимая его на ваш этаж!
           </p>
         </li>
-        <li class="guaranty-discription visually-hidden">
+        <li class="guaranty-discription">
           <h3>Гарантия</h3>
           <p>Если купленный у нас товар поломается или заискрит,
             а также в случае пожара, спровоцированного его
@@ -260,7 +253,7 @@
             Дом уж восстановите как-нибудь сами.
           </p>
         </li>
-        <li class="credit-discription visually-hidden">
+        <li class="credit-discription">
           <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще!
             Кредитные консультанты придут вам на помощь.
@@ -279,8 +272,8 @@
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
             ремонта и строительства не оставит равнодушными любителей сэкономить на
             гастарбайтерах.
-
-            Мы можем доставить ваш товар в самые отдаленные точки России!
+          </p>
+          <p class="delivery-companies-info">Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="delivery-companies">
@@ -295,10 +288,7 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,
              заехав в наш офис:</p>
-          <a href="blank.html">
-            <div class="small-map"></div>
-          </a>
-          <a class="button" href="blank.html">Заблудились?Напишите нам!</a>
+          <a class="button" href="blank.html">Заблудились? Напишите нам!</a>
         </div>
       </div>
     </div>
@@ -310,34 +300,33 @@
 <footer class="main-footer">
   <section class="main-footer-navigation">
     <div class="container">
-      <div class="main-footer-wrapper">
-        <div class="main-footer-logo">
-          <a class="main-footer-logo-link" href="index.html">
-            <img class="main-footer-logo-img" src="img/logo-technomart_footer.svg" width="138" height="23" alt="Логотип Техномарта">
-          </a>
-        </div>
+      <div class="footer-top-wrapper">
+        <a class="main-footer-logo" href="index.html">
+          <img class="main-footer-logo-img" src="img/logo-technomart_footer.svg" width="138" height="23" alt="Логотип Техномарта">
+        </a>
 
-        <nav class="footer-navigation">
-          <ul class="top-line">
-            <li class="footer-nav-top-item"><a href="blank.html">Компания</a></li>
-            <li class="footer-nav-top-item"><a href="blank.html">Новости</a></li>
-            <li class="footer-nav-top-item"><a href="catalog.html">Каталог</a></li>
-            <li class="footer-nav-top-item"><a href="blank.html">Доставка</a></li>
-            <li class="footer-nav-top-item"><a href="blank.html">Контакты</a></li>
-          </ul>
-          <ul class="bottom-line">
-            <li class="footer-nav-bottom-item"><a href="blank.html">Материалы</a></li>
-            <li class="footer-nav-bottom-item"><a href="blank.html">Техника</a></li>
-            <li class="footer-nav-bottom-item"><a href="blank.html">Инструмент</a></li>
-            <li class="footer-nav-bottom-item"><a href="blank.html">Спецпредложения</a></li>
-          </ul>
-        </nav>
+        <ul class="top-line">
+          <li class="footer-nav-top-item"><a href="blank.html">Компания</a></li>
+          <li class="footer-nav-top-item"><a href="blank.html">Новости</a></li>
+          <li class="footer-nav-top-item"><a href="catalog.html">Каталог</a></li>
+          <li class="footer-nav-top-item"><a href="blank.html">Доставка</a></li>
+          <li class="footer-nav-top-item"><a href="blank.html">Контакты</a></li>
+        </ul>
+      </div>
 
+      <div class="footer-middle-wrapper">
         <div class="footer-contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
           <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
+
+        <ul class="bottom-line">
+          <li class="footer-nav-bottom-item"><a href="blank.html">Материалы</a></li>
+          <li class="footer-nav-bottom-item"><a href="blank.html">Техника</a></li>
+          <li class="footer-nav-bottom-item"><a href="blank.html">Инструмент</a></li>
+          <li class="footer-nav-bottom-item"><a href="blank.html">Спецпредложения</a></li>
+        </ul>
       </div>
     </div>
   </section>
